@@ -50,3 +50,69 @@ SC2T offers StarCraft 2 players a structured way to improve their gameplay throu
    ```bash
    git clone https://github.com/jodayyy/StarCraft-2-Training-System-SC2T.git
    cd StarCraft-2-Training-System-SC2T
+
+2. **Set Up Virtual Environment (Recommended)**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On macOS/Linux
+   venv\Scripts\activate     # On Windows
+
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+
+4. **Set Up Environment Variables**
+- Create a **.env** file in the root directory with the following content:
+  ```plaintext
+  SECRET_KEY=YourSecretKeyHere
+
+5. **Set Up the Database**
+- Run the application once to automatically create the database:
+  ```bash
+  python main.py
+
+## Usage
+
+### Starting the Application
+- Start the Flask application with:
+  ```bash
+  python main.py 
+
+### Accessing the Application
+
+Open a browser and go to **http://127.0.0.1:5000**.
+
+### User Features
+
+- **Train against AI:** Play against a custom AI to practice skills and strategies.
+- **View Performance:** ccess a history of matches with results and timestamps to analyze gameplay.
+
+### Admin Features
+
+- **Update AI:** Modify and enhance AI for improved training experiences.
+- **Review User Performance:** Access performance data for all users, including match results and progress metrics.
+
+## Contributing
+
+1. Fork the Repository
+
+2. Create a Feature Branch
+  ```bash
+  git checkout -b feature/YourFeature
+
+3. Commit Changes
+  ```bash
+  git commit -m "Add YourFeature"
+
+4. Push to github
+  ```bash
+  git push origin feature/YourFeature
+
+5. Open a Pull Request
+
+
+
+
+
+
+
