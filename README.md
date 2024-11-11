@@ -15,7 +15,7 @@ The **StarCraft 2 Training System (SC2T)** is a web-based application that allow
   - [Accessing the Application](#accessing-the-application)
   - [User Features](#user-features)
   - [Admin Features](#admin-features)
-  - [Screenshots](#screenshots)
+- [Screenshots](#screenshots)
 
 ## Project Overview
 
