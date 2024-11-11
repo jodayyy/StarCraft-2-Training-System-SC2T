@@ -1,0 +1,75 @@
+{% extends "user-base.html" %}
+
+{% block title %}SC2T Team Page{% endblock %} 
+{% block content %}
+<main id="main">
+    <!-- ======= Our Team Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Our Team</h2>
+          <ol>
+            <li><a class="nav-item nav-link" id="user" href="/user">Home</a></li>
+            <li>Our Team</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="{{ url_for('static', filename='img/team-1.jpg') }}" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Mohamad Johari bin Mohd Sabri</h4>
+                <br>
+                <span>Team Leader</span>
+                <span>Software Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="{{ url_for('static', filename='img/team-2.jpg') }}" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Gary Anak Kidcarson</h4>
+                <br>
+                <span>Software Tester</span>
+                <span>Software Designer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="{{ url_for('static', filename='img/team-3.jpg') }}" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Aszrulnizam bin Asfia Rasedi</h4>
+                <br>
+                <span>Software Requirement Analyst</span>
+                <span>Software Engineer</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+  </main><!-- End #main -->
+{% endblock %}

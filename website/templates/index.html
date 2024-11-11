@@ -1,0 +1,57 @@
+{% extends "index-base.html" %}
+
+{% block title %}SC2T Index Page{% endblock %} 
+{% block content %}
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="1000000000">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>StarCraft 2 Training System</span></h2>
+          <p class="animate__animated animate__fadeInUp">StarCraft 2 Training System is a system which StarCraft 2 players can train against our A.I that is more unpredictable, more resilient, and more effective at their strategy. With the StarCraft 2 Training System, players will experience various benefits, such as effective training in playing StarCraft 2 and view their performance as a player.</p>
+          <a id="login" href="/login" class="btn-get-started animate__animated animate__fadeInUp nav-item nav-link">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= Services Section ======= -->
+    <section class="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>User Features</h2>
+          <p>StarCraft 2 Training System features include Train Against A.I and View User's Performance. User features will be updated and new features will be added in the future.</p>
+          <br>
+          <p>Please login to use all of these website features.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box icon-box-pink">
+              <div class="icon"><i class="bx bxs-invader"></i></div>
+              <h4 class="title">Train Against A.I</h4>
+              <p class="description">Train against A.I that our team created. The difficulty of the A.I will always be updated from time to time to ensure the efficiency of the training.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-green">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title">View User's Performance</h4>
+              <p class="description">View user's performance that include match result, date and time. More detailed user's performance will be added in the future.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+  </main><!-- End #main -->
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends "user-base.html" %}
+
+{% block title %}SC2T User Performance Page{% endblock %} 
+{% block content %}
+<main id="main">
+  <!-- ======= Our Team Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>User Performance</h2>
+        <ol>
+          <li><a class="nav-item nav-link" id="user" href="/user">Home</a></li>
+          <li>User Performance</li>
+        </ol>
+      </div>
+
+    </div>
+  </section><!-- End Our Team Section -->
+
+  <!-- ======= Team Section ======= -->
+  <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+    <div class="container">
+
+      <div class="row">
+          <div class="row">
+              <div class="col"></div>
+              <div class="col rounded col-gui">
+                <br>
+                <h3 align="center"> User Performance </h3>
+                <br>
+                {% with messages = get_flashed_messages(with_categories=true) %} 
+                  {% if messages %} 
+                    {% for category, message in messages %} 
+                      {% if category == 'error' %}
+                        <div class="alert alert-danger alter-dismissable fade show" role="alert">
+                          {{ message }}
+                          <button type="button" class="close" data-dismiss="alert">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                      {% else %}
+                        <div class="alert alert-success alter-dismissable fade show" role="alert">
+                          {{ message }}
+                          <button type="button" class="close" data-dismiss="alert">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                      {% endif %} 
+                    {% endfor %} 
+                  {% endif %} 
+                {% endwith %}
+                <table>
+                  <tbody>
+                    {% for row in rows %}
+                      <tr 
+                      {% if row[0] == '<strong>Result:</strong> Victory' %}
+                        style="background-color: #98FB98"
+                      {% endif %}
+                      {% if row[0] == '<strong>Result:</strong> Defeat' %}
+                        style="background-color: #F47174"
+                      {% endif %}>
+                        {% for cell in row %}
+                          <td>{{ cell|safe }}</td>
+                        {% endfor %}
+                      </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+                <br>
+                <br>
+              </div>
+              <div class="col"></div>
+          </div>
+      </div>
+
+    </div>
+  </section><!-- End Team Section -->
+</main><!-- End #main -->
+{% endblock %}

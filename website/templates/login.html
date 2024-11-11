@@ -1,0 +1,74 @@
+{% extends "index-base.html" %}
+
+{% block title %}SC2T Login Page{% endblock %}
+{% block content %}
+<!-- ======= Hero No Slider Section ======= -->
+<section id="hero-no-slider" class="d-flex justify-content-center align-items-center">
+  <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+    <div class="row justify-content-center">
+      <div class="col-xl-8">
+        <form method="POST">
+          <br>
+          <h2>Login</h2>
+          <br>
+          <div class="login-container container bg-white rounded">
+            <br>
+            {% with messages = get_flashed_messages(with_categories=true) %} 
+              {% if messages %} 
+                {% for category, message in messages %} 
+                  {% if category == 'error' %}
+                    <div class="alert alert-danger alter-dismissable fade show" role="alert">
+                      {{ message }}
+                      <button type="button" class="close" data-dismiss="alert">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                  {% else %}
+                    <div class="alert alert-success alter-dismissable fade show" role="alert">
+                      {{ message }}
+                      <button type="button" class="close" data-dismiss="alert">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                  {% endif %} 
+                {% endfor %} 
+              {% endif %} 
+            {% endwith %}
+            <br>
+            <div class="form-group">
+              <i class='bx bxs-user-circle' ></i>
+              <input
+                type="text"
+                class="form-control"
+                id="userName"
+                name="userName"
+                placeholder="Username"
+              />
+            </div>
+            <br>
+            <div class="form-group">
+              <i class='bx bxs-key' ></i>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                placeholder="Password"
+              />
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Log In</button>
+            <br>
+            <br>
+            <a>Not registered?</a>
+            <a id="signUp" href="/signUp" class="text-dark btn-get-started nav-item nav-link">Sign Up</a>
+            <br>
+            <br>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Hero No Slider Sectio -->
+{% endblock %}

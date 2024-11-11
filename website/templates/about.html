@@ -1,0 +1,73 @@
+{% extends "index-base.html" %}
+
+{% block title %}SC2T About Page{% endblock %} 
+{% block content %}
+  <main id="main">
+    <!-- ======= About Us Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>About SC2T</h2>
+          <ol>
+            <li><a class="nav-item nav-link" id="index" href="/">Home</a></li>
+            <li>About SC2T</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= About Section ======= -->
+    <section class="about" data-aos="fade-up">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <h3>What is StarCraft 2?</h3>
+            <br>
+            <p>
+              StarCraft II is a sequel to the real-time strategy game StarCraft, announced on May 19, 2007, at the Blizzard Worldwide Invitational in Seoul, South Korea. It waseventually  set  to  be  released  as  a  trilogy.  
+              StarCraft  2  become  free-to-play since November 14, 2017, and since then, there are a lot of new players and old players  who  have  been  playing  StarCraft  from  across  the  globe  coming  to  play this game. 
+              Simplest way to explain how the gameplay work is player will choose between 3 races which is Protoss (Ancient, noble warriors with a golden armada and  advanced  psionic  technology),  
+              Terran  (Resourceful  humans  with  varied technology  and  plenty  of  attitude)  and  Zerg (A  ferocious  swarm  of  merciless beasts  that  devour  worlds).  
+              Players  will  then  construct  their  base  and  gather minerals  and  vespine  gas  to  build  production  structures  and  upgrade  their technology. 
+              After that, players will spend  minerals  and vespene gas to  amass  a powerful  and  distinctive  army.  Finally,  players  will  deploy  their  forces  with creativity and finesse to overcome their opponents.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img src="{{ url_for('static', filename='img/about-1.jpg') }}" class="img-fluid" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Our Skills Section ======= -->
+    <section class="skills" data-aos="fade-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <div class="section-title">
+              <h2>StarCraft 2 Training System</h2>
+              <p>
+                StarCraft  2  Training  System  is  a  new  system  which  can  train  players  by playing against A.I that is more unpredictable, more resilient, and more effective at   their   strategy.   
+                Players   who   use   this   system   could   also   analyze   their performance  against  our  A.I  to  see  which  area  they  are  lacking  and  improve themselves.  
+                With  the  StarCraft  2  Training  System,  players  will  experience various benefits, such as effective training in playing StarCraft 2 and wider view on their performance as a player.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="section-title">
+              <h2>Our A.I</h2>
+              <p>
+                We create our A.I using python-sc2. An easy-to-use library for writing AI Bots for StarCraft II. Our ultimate goal is to create an A.I that could plays StarCraft 2 at a pro-level. 
+                With limited resources, we could only rely on limited data to train our A.I but with enough training, we could reach our goal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Our Skills Section -->
+  </main><!-- End #main -->
+{% endblock %}

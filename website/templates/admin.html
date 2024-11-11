@@ -1,0 +1,22 @@
+{% extends "admin-base.html" %}
+
+{% block title %}SC2T Admin Page{% endblock %} 
+{% block content %}
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex justify-cntent-center align-items-center">
+  <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="1000000000">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="carousel-container">
+        <h2 class="animate__animated animate__fadeInDown"><span>StarCraft 2 Training System</span></h2>
+        <h2 class="animate__animated animate__fadeInDown">Admin Page</h2>
+        <a id="admin-updateAI" href="/admin-updateAI" class="btn-get-started animate__animated animate__fadeInUp nav-item nav-link">Update A.I</a>
+        <a id="admin-AIPerform" href="/admin-AIPerform" class="btn-get-started animate__animated animate__fadeInUp nav-item nav-link">View A.I Performance</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
+{% endblock %}
+    

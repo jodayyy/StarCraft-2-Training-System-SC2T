@@ -1,0 +1,9 @@
+# Ignore Python cache and system files
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# Ignore environment-specific files
+.env
+instance/database.db
