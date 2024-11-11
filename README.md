@@ -92,25 +92,6 @@ Open a browser and go to **http://127.0.0.1:5000**.
 - **Update AI:** Modify and enhance AI for improved training experiences.
 - **Review User Performance:** Access performance data for all users, including match results and progress metrics.
 
-## Contributing
-
-1. Fork the Repository
-
-2. Create a Feature Branch
-  ```bash
-  git checkout -b feature/YourFeature
-
-3. Commit Changes
-  ```bash
-  git commit -m "Add YourFeature"
-
-4. Push to github
-  ```bash
-  git push origin feature/YourFeature
-
-5. Open a Pull Request
-
-
 
 
 
