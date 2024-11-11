@@ -15,6 +15,7 @@ The **StarCraft 2 Training System (SC2T)** is a web-based application that allow
   - [Accessing the Application](#accessing-the-application)
   - [User Features](#user-features)
   - [Admin Features](#admin-features)
+  - [Screenshots](#screenshots)
 
 ## Project Overview
 
@@ -100,7 +101,7 @@ Open a browser and go to **http://127.0.0.1:5000**.
    ![UpdateAI](images/Admin_UpdateAI.png)
 
 4. Review User Performance
-   ![ReviewUserPerformance](images/Admin_AIPerformance)
+   ![ReviewUserPerformance](images/Admin_AIPerformance.png)
 
 5. Train Against AI
    ![TrainAgainstAI](images/User_Train.png)
