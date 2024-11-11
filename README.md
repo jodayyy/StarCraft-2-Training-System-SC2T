@@ -89,6 +89,25 @@ Open a browser and go to **http://127.0.0.1:5000**.
 - **Update AI:** Modify and enhance AI for improved training experiences.
 - **Review User Performance:** Access performance data for all users, including match results and progress metrics.
 
+### Screenshots
+1. Login Page
+   ![Login](images/Login.png)
+
+2. Sign Up Page
+   ![SignUp](images/SignUp.png)
+
+3. Update AI
+   ![UpdateAI](images/Admin_UpdateAI.png)
+
+4. Review User Performance
+   ![ReviewUserPerformance](images/Admin_AIPerformance)
+
+5. Train Against AI
+   ![TrainAgainstAI](images/User_Train.png)
+
+6. View Performance
+   ![ViewPerformance](images/User_Performance.png)
+
 
 
 
